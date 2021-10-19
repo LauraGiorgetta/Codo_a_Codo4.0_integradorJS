@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+/*Comienzo nav*/
+header nav{
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+header img{
+    width: 8rem;
+}
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header a{
+    color: #ccc;
+    text-decoration: none;
+}
+header li{
+    list-style: none;
+    padding: .5rem;
+}
+header a:hover{
+    color: #fff;
+}
+header li:first-of-type a:hover, header li:last-of-type a:hover{
+    color: #cc0;
+}
+/*fin nav*/
+
+/*Colores*/
+.t-white{
+    color: #fff;
+}
+.bg-black{
+    background-color: #333;
+}
+.t-green{
+    color: #0c0;
+}
+.bg-yellow{
+    background-color: #fc0;
+}
+.bg-cyan{
+    background-color: #0cc;
+}
+.bg-red{
+    background-color: #c44;
+}
+.bg-gray{
+    background-color: #555;
+}
+/*Fin colores*/
+
+/*Section Conf BsAs*/
+#conf-bsas{
+    position: relative;
+}
+.conf-bsas{
+    position: absolute;
+    z-index: 2;
+    width: 34rem;
+    text-align: right;
+    right: 5rem;
+    top: 12rem;
+}
+#conf-bsas:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: block;
+    height: 35rem;
+    width: 100%;
+    background-image: url("img/ba1.jpg");
+    background-size: cover;
+    background-position-y: center;
+    filter: brightness(.4)
+
+}
+
+#conf-bsas h2{
+    padding-bottom: 1rem;
+}
+#conf-bsas p {
+    line-height: 1.7rem;
+}
+.conf-botones button{
+    padding: .5rem 1rem;
+    margin-top: 1rem ;
+    border-radius: .5rem;
+}
+.conf-botones button a{
+    text-decoration: none;
+}
+.conf-botones button:first-of-type{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.conf-botones button:last-of-type{
+    background-color: #0c0;
+    border: 1px solid #0c0;
+}
+.conf-botones button:first-of-type:hover{
+    background-color: #fff3;
+}
+.conf-botones button:last-of-type:hover{
+    background-color: #090;
+}
+.conf-botones button:first-of-type:active{
+    background-color: #9993;
+}
+.conf-botones button:last-of-type:active{
+    background-color: #070;
+}
+/*Fin Section Conf BsAs*/
+/*Oradores*/
+#oradores{
+    padding-top: 36rem;
+}
+.chiquito{
+    font-size: .7rem;
+    font-weight: normal;
+    display: block;
+}
+#oradores h2{
+    text-align: center;
+}
+#oradores img{
+    width: 100%;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.cards figure{
+    width: 20rem;
+    margin: 1rem;
+}
+.cards span{
+    font-weight: bold;
+    font-size: .7rem;
+    display: inline-block;
+    padding: .1rem .3rem;
+    border-radius: .3rem;
+    margin-top: 1em;
+}
+.cards h3 {
+    margin-bottom: .5em;
+}
+.cards p{
+    line-height: 1.8em;
+    font-size: .9rem;
+}
+.cards img{
+    display: block;
+}
+.cards figcaption{
+    padding: 1rem;
+    border: #ccc 1px solid;
+    border-top-color: transparent;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+/*Fin Oradores*/
+/*Lugar*/
+#lugar img{
+    width: 100%;
+}
+#lugar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #555;
+}
+.lugar-text{
+    padding: 1rem;
+    color: white;
+}
+.lugar-text p{
+    line-height: 1.8em;
+}
+.lugar-text h2{
+    margin-bottom: 1rem;
+}
+.lugar-text button{
+    background-color: transparent;
+    border: #fff 1px solid;
+    padding: .3rem .6rem;
+    border-radius: .3rem;
+    margin-top: 1rem;
+}
+.lugar-text button:hover{
+    background-color: #fff3;
+}
+.lugar-text button:active{
+    background-color: #9993;
+}
+.lugar-text button a{
+    color: #fff;
+    text-decoration: none;
+}
+/*Fin lugar*/
+/*Formulario*/
+#formulario{
+    text-align: center;
+    margin: 1rem;
+}
+#formulario h2{
+    margin-bottom: 1em;
+}
+.dot{
+    text-decoration: underline #000 dotted;
+}
+#formulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50rem;
+    margin: auto;
+    gap:  1rem 2rem;
+    margin-top: 1rem;
+}
+#formulario input{
+    padding: .5rem;
+}
+
+#formulario textarea{
+    grid-column: 1/3;
+    height: 8rem;
+    padding: 1rem;
+}
+#formulario form p {
+    grid-column: 1/3;
+    font-size: .8rem;
+    color: #555;
+    position: relative;
+    top: -.6rem;
+    text-align: left;
+}
+#formulario button{
+    grid-column: 1/3;
+    padding: .5rem 0;
+    border: 1px solid #0c0;
+    background-color: #8c6;
+    color: #fff;
+}
+/*Fin formulario*/
+/*Footer*/
+footer{
+    background-color: #035;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+footer a {
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 7rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+}
+/*Fin footer*/
+
+@media (max-width:1200px) {
+    /*Comienzo nav*/
+    header nav{
+        padding: 0 1rem;
+    }
+    /*Fin nav*/
+    
+}
+@media (max-width:1000px) {
+
+    /*Comienzo nav*/
+    header nav {
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    header nav, header ul{
+        display: block;
+    }
+    header li{
+        display: block;
+        padding: 1rem;
+        border-bottom: #ccc 1px solid;
+
+    }
+    /*Fin nav*/
+    /*Oradores*/
+    .cards{
+        flex-wrap: wrap;
+    }
+    /*Fin Oradores*/
+    /*Lugar*/
+    #lugar{
+        grid-template-columns: 1fr;
+        padding: 1rem 5rem;
+    }
+    /*Fin lugar*/
+    
+}
+@media (max-width:700px){
+    /*Section Conf BsAs*/
+    .conf-bsas{
+        text-align: center;
+        width: auto;
+        right: 0;
+        top: 2rem;
+        padding: 2rem;
+    }
+    #conf-bsas:before{
+        height: 40rem;
+    }
+    /*Fin Section Conf BsAs*/
+    /*Oradores*/
+    #oradores{
+        padding-top: 43rem;
+    }
+    .cards figure{
+        width: 100%;
+        margin: 2rem;
+    }
+    /*Fin Oradores*/
+    /*Lugar*/
+    #lugar{
+        padding: 0;
+    }
+    /*Fin lugar*/
+    /*formulario*/
+    #formulario input{
+        grid-column: 1/3;
+    }
+    /*Fin formulario*/
+}
