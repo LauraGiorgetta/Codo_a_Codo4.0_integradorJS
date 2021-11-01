@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador Codo a Codo JS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bg-black">
+            <div class="logo">
+                <img src="img/codoacodo.png" alt="Codo a Codo">
+                <h1>Conf Bs As</h1>
+            </div>
+            <ul>
+                <li><a href="index.html#conf-bsas" class="t-white">La conferencia</a></li>
+                <li><a href="index.html#oradores">Los oradores</a></li>
+                <li><a href="index.html#lugar">El lugar y la fecha</a></li>
+                <li><a href="index.html#formulario">Conviértete en orador</a></li>
+                <li><a href="#" class="t-green">Comprar tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="descuentos" class="cards">
+        <figure class="b-blue">
+            <h2>Estudiante</h2>
+            <p>Tienen un descuento</p>
+            <p><strong>80%</strong></p>
+            <p class="chiquito t-gray">* presentar documentación</p>
+        </figure>
+        <figure class="b-cyan">
+            <h2>Trainee</h2>
+            <p>Tienen un descuento</p>
+            <p><strong>50%</strong></p>
+            <p class="chiquito t-gray">* presentar documentación</p>
+        </figure>
+        <figure class="b-yellow">
+            <h2>Junior</h2>
+            <p>Tienen un descuento</p>
+            <p><strong>15%</strong></p>
+            <p class="chiquito t-gray">* presentar documentación</p>
+        </figure>
+    </section>
+    <section id="venta">
+        <h2 class="chiquito t-gray">VENTA</h2>
+        <h2>VALOR DE TICKET $200</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="email" placeholder="Correo">
+            <label for="cantidad">Cantidad</label>
+            <label for="categoria">Categoria</label>
+            <input type="text" id="cantidad">
+            <select name="categoria" id="categoria">
+                <option value="estudiante">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+            </select>
+            <p id="total">Total a pagar: $200</p>
+            <button type="reset">Borrar</button>
+            <button type="submit" id="venta-submit">Resumen</button>
+        </form>
+    </section>
+
+    <footer>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Contáctanos</a>
+        <a href="#">Prensa</a>
+        <a href="#">Conferencias</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Estudiantes</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
