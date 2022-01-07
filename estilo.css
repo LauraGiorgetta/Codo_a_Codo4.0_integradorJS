@@ -415,6 +415,37 @@ header li:last-of-type a:hover {
 /*Fin venta*/
 
 
+/*Registro*/
+
+#registro {
+    text-align: center;
+    padding: 2rem;
+}
+
+#registro button {
+    background-color: #9c4;
+    border: 1px solid #0c0;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#registro form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 50rem;
+}
+
+#registro form * {
+    padding: .5rem;
+}
+
+
+/*Fin Registro*/
+
+
 /*Footer*/
 
 footer {
@@ -521,4 +552,9 @@ footer a {
     }
     /*Fin Venta*/
     /*Fin Tickets*/
+    /*Registrarse*/
+    #registro form {
+        grid-template-columns: 1fr;
+    }
+    /*Fin Registrarse*/
 }
